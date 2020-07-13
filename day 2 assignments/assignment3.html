@@ -1,0 +1,18 @@
+<h1>MM/DD/YYYY hh:mm</h1>
+<p>Date/Time: <span id="date/time"></span></p    
+    <p>Date/Time: <span id="date-time"></span></p>    
+
+<h1>DD.MM.YYYY hh:mm</h1>
+<p>Date/Time: <span id="date/"></span></p>
+<p>Date/Time: <span id="date-"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("date/time").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+var at = new Date();
+document.getElementById("date-time").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()+1).slice(-2)) +":"+ (("0"+dt.getMinutes()+1).slice(-2));
+var ct = new Date();
+document.getElementById("date/").innerHTML = (("0"+dt.getDate()).slice(-2)) +"-"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"-"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+var ct = new Date();
+document.getElementById("date-").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+</script>
