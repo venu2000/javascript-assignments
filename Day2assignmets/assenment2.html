@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assenment2</title>
+</head>
+<body>
+    <h1> js string methods and array methods</h1>
+    <p id="demo"></p>
+    <script>
+        var str="please locate where locate occurs";
+        var pos=str.search("locate");//method1
+        document.getElementById("demo").innerHTML=pos;
+    </script>
+    <p id="dem"></p>
+    <script>
+        var res=str.slice(7,13);//method 2
+        document.getElementById("dem").innerHTML=res;
+    </script>
+    <p id="demoo"></p>
+    <script>
+        var ress=str.substr(2,19);//method 3
+        document.getElementById("demoo").innerHTML=ress;
+    </script>
+    <p id="live"></p>
+    <script>
+        var s=str.replace("locate","upgrade");//method4
+        document.getElementById("live").innerHTML=s
+    </script>
+    <p id="livee"></p>
+    <script>
+        var a=str.trim();//method 5
+        document.getElementById("livee").innerHTML=a;
+    </script>
+    <h1>methods on array</h1>
+    <p id= "loss"></p>
+    <script>
+        var fruits=["apple","banana","orange","mango","goa"];
+        document.getElementById("loss").innerHTML=fruits.toString();//method 1
+    </script>
+    <p id="loc"></p>
+    <script>
+        document.getElementById("loc").innerHTML=fruits.join('@');//method 2
+    </script>
+    <p id="locc"></p>
+    <script>
+        document.getElementById("locc").innerHTML=fruits.pop();//method 3 returns poped one
+    </script>
+    <p id="ruchi"></p>
+    <script>
+        document.getElementById("ruchi").innerHTML=fruits.push('kiwi');//meth 4 returns new array length
+    </script>
+    <p id="ruchii"></p>
+    <script>
+        document.getElementById("ruchii").innerHTML=fruits.concat("grapes");//meth 5 adds new element
+    </script>
+    
+</body>
+</html>
